@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daftar Hadir Anniversary 7th — The Zuri Dumai</title>
+<style>
+:root{--navy:#12263d;--navy2:#1b3856;--red:#bd2635;--gold:#d7b267;--bg:#f2f4f7;--paper:#fff;--ink:#202a36;--muted:#738093;--line:#e3e8ee;--green:#16865a;--softgreen:#e7f5ee;--softred:#fff0f0;--shadow:0 8px 28px #172b4210}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font:14px/1.45 Inter,Segoe UI,Arial,sans-serif;color:var(--ink)}button,input,select,textarea{font:inherit}button{border:0;cursor:pointer;font-weight:650;border-radius:9px;padding:10px 14px;transition:.15s}button:hover{filter:brightness(.97)}button:disabled{opacity:.45;cursor:not-allowed}input,select,textarea{width:100%;min-width:0;border:1px solid #d5dce5;border-radius:9px;padding:11px 12px;background:#fff;color:var(--ink);outline:none}input:focus,select:focus,textarea:focus{border-color:#7188a3;box-shadow:0 0 0 3px #dfe7f0}
+.top{background:var(--navy);color:#fff;border-bottom:4px solid var(--red)}.top-inner{max-width:1440px;margin:auto;padding:20px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:15px}.brand-mark{width:48px;height:48px;border:1px solid #d7b267;border-radius:12px;display:grid;place-items:center;color:#e7c77f;font-weight:900;font-size:18px;flex-shrink:0}.kicker{font-size:10px;letter-spacing:2.2px;color:#e7c77f;font-weight:800}.top h1{font-size:clamp(20px,2.2vw,29px);margin:4px 0 2px;line-height:1.15}.top p{margin:0;color:#c7d2df;font-size:13px}.top-right{text-align:right;color:#dce4ec}.top-right strong{display:block;font-size:18px}.top-right small{color:#c0ccda}
+.shell{max-width:1440px;margin:auto;padding:20px 28px 32px}.tabs{display:flex;gap:7px;align-items:center;border-bottom:1px solid #d9e0e8;margin-bottom:18px;overflow-x:auto}.tab{background:transparent;color:#627083;border-radius:9px 9px 0 0;padding:13px 17px;white-space:nowrap;border-bottom:3px solid transparent}.tab.active{color:var(--navy);background:#fff;border-bottom-color:var(--red)}.tab .ico{margin-right:7px}
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-bottom:18px}.metric{background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:17px 19px;box-shadow:var(--shadow);display:flex;justify-content:space-between;align-items:center;gap:12px}.metric-label{color:var(--muted);font-size:12px;font-weight:600}.metric-value{font-size:30px;font-weight:800;color:var(--navy);line-height:1.2;margin-top:5px}.metric-icon{width:42px;height:42px;border-radius:12px;background:#edf1f6;display:grid;place-items:center;font-size:20px}.metric.green .metric-value{color:var(--green)}.metric.green .metric-icon{background:var(--softgreen)}.metric.red .metric-value{color:var(--red)}.metric.red .metric-icon{background:var(--softred)}
+.panel{background:#fff;border:1px solid var(--line);border-radius:13px;padding:20px;box-shadow:var(--shadow);min-width:0}.panel-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}.panel-title h2{margin:0;color:var(--navy);font-size:17px}.sub{color:var(--muted);font-size:12px;margin-top:4px}.grid-main{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(310px,.8fr);gap:16px}.toolbar{display:grid;grid-template-columns:minmax(220px,1fr) 210px;gap:9px;margin-bottom:12px}.list{display:flex;flex-direction:column;gap:8px}.person{display:flex;align-items:center;gap:12px;padding:12px;border:1px solid var(--line);border-radius:10px;background:#fff;min-width:0}.avatar{width:37px;height:37px;border-radius:10px;display:grid;place-items:center;background:#edf1f6;color:var(--navy);font-weight:800;flex-shrink:0}.person-main{flex:1;min-width:0}.person-name{font-weight:750;color:#243246;overflow-wrap:anywhere}.person-meta{font-size:12px;color:var(--muted);margin-top:2px}.person-actions{display:flex;gap:7px;align-items:center}.btn-primary{background:var(--red);color:white}.btn-green{background:var(--green);color:white}.btn-light{background:#edf1f5;color:#30435a}.btn-danger{background:#fff0f0;color:#ae2632;border:1px solid #f2d1d4}.btn-gold{background:#f4e9cf;color:#664c1e}.btn-small{font-size:12px;padding:8px 11px}.tag{font-size:11px;border-radius:30px;padding:4px 8px;background:#edf1f6;color:#596b80;white-space:nowrap}.tag-green{background:var(--softgreen);color:var(--green)}.empty{padding:36px 16px;text-align:center;color:var(--muted);border:1px dashed #cbd4df;border-radius:10px}.empty b{display:block;color:#415167;margin-bottom:4px}.dept-row{display:flex;align-items:center;gap:10px;padding:12px;border:1px solid var(--line);border-radius:10px}.dept-row .person-main{min-width:0}.bar{height:5px;background:#edf0f4;border-radius:9px;overflow:hidden;margin-top:7px}.bar span{display:block;height:100%;background:var(--green);border-radius:9px}.section-note{font-size:12px;color:var(--muted);margin:0 0 14px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field label{display:block;font-size:12px;font-weight:700;color:#536175;margin:0 0 6px}.field.full{grid-column:1/-1}.field-actions{display:flex;gap:8px;align-items:end}.field-actions button{white-space:nowrap}.inline-form{display:flex;gap:9px;align-items:center}.inline-form input{flex:1}.count-label{font-size:12px;color:var(--muted)}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:550px}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line)}th{background:#f7f9fb;color:#647287;font-size:11px;text-transform:uppercase;letter-spacing:.5px}td{font-size:13px}td:last-child{text-align:right;white-space:nowrap}.export-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.8fr);gap:16px}textarea{resize:vertical;line-height:1.6}.button-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.button-row button{flex:1}.hintbox{background:#f7f9fb;border:1px solid var(--line);padding:12px;border-radius:9px;color:#5f6e80;font-size:12px;margin-top:12px}.hidden{display:none!important}.modal-back{position:fixed;inset:0;background:#0c1a2acc;z-index:10;display:grid;place-items:center;padding:18px}.modal{width:min(460px,100%);background:white;border-radius:14px;padding:22px;box-shadow:0 20px 70px #0004}.modal h3{margin:0 0 8px;color:var(--navy)}.modal p{color:var(--muted);font-size:13px}.modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}.footer{text-align:center;color:#8792a1;font-size:11px;padding:12px}
+@media(max-width:980px){.grid-main,.export-layout{grid-template-columns:1fr}.top-inner,.shell{padding-left:16px;padding-right:16px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.top-right{display:none}.top-inner{padding-top:17px;padding-bottom:17px}.brand-mark{width:42px;height:42px}.metrics{gap:8px}.metric{padding:13px}.metric-value{font-size:25px}.metric-icon{display:none}.panel{padding:14px}.toolbar{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.person{flex-wrap:wrap}.person-actions{width:100%;padding-left:49px}.person-actions button{flex:1}.tabs{margin-right:-16px}.tab{padding:12px 13px}}
+
+/* Dashboard Utama: focused attendance screen without decorative banner */
+#page-dashboard{margin:0}
+.dash-card{background:#f9fbff;border:1px solid #e3e8f0;border-radius:16px;margin:20px 0 24px;padding:24px 2%;box-shadow:0 10px 30px #101b3620;position:relative}
+.dash-controls{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(270px,1fr);gap:28px;margin-bottom:18px}
+.dash-control label{display:flex;align-items:center;gap:12px;font-size:clamp(15px,1.45vw,21px);font-weight:750;color:#101d38;margin:0 0 8px 5px}
+.search-symbol{font-size:34px;line-height:25px;font-weight:400}
+.building-symbol{font-size:25px}
+.dash-control input,.dash-control select{height:58px;border:1.5px solid #cbd5e4;border-radius:9px;background:#fff;padding:0 18px;font-size:17px;color:#182541}
+.dash-control input::placeholder{color:#8995a8}
+.dashboard-table-wrap table{min-width:720px;border-collapse:separate;border-spacing:0}
+.dashboard-table-wrap thead th{background:#12213f;color:#fff;text-transform:none;letter-spacing:0;font-size:16px;padding:15px 18px;border-bottom:0}
+.dashboard-table-wrap thead th:first-child{border-radius:9px 0 0 0}
+.dashboard-table-wrap thead th:last-child{border-radius:0 9px 0 0;text-align:center}
+.dashboard-table-wrap tbody tr:nth-child(odd){background:#fff}
+.dashboard-table-wrap tbody tr:nth-child(even){background:#eef3fa}
+.dashboard-table-wrap tbody td{padding:11px 18px;font-size:16px;color:#34445f;border-bottom:0}
+.dashboard-table-wrap tbody td:nth-child(2){font-weight:750;color:#101d38}
+.dashboard-table-wrap tbody td:last-child{text-align:center}
+.dash-status{display:inline-flex;align-items:center;gap:9px;padding:9px 13px;border-radius:8px;font-size:13px;font-weight:750;white-space:nowrap}
+.dash-status.present{background:#d9f3e1;color:#138143}
+.dash-status.absent{background:#ffe0e2;color:#b51e2a}
+.dash-check{min-width:150px;padding:11px 16px;border-radius:9px;background:#e0e2e6;color:#fff}
+.dash-check.ready{background:#df1f35;color:#fff}
+.dash-check:disabled{opacity:1;cursor:default}
+@media(max-width:980px){.dash-card{margin:16px 0 20px;padding:18px 2%}.dash-controls{grid-template-columns:1fr;gap:14px}}
+@media(max-width:600px){.dash-card{padding:14px 10px}.dash-control label{font-size:15px}.dash-control input,.dash-control select{height:48px;font-size:14px}.dashboard-table-wrap tbody td{padding:9px;font-size:13px}.dashboard-table-wrap thead th{padding:12px 9px;font-size:13px}.dash-status{font-size:11px;padding:7px}.dash-check{min-width:100px;padding:9px;font-size:12px}}
+@media(max-width:980px){#page-dashboard{margin:-20px -16px 0}.dash-hero{padding:22px 3%;min-height:130px}.dash-fantastic{display:none}.dash-card{margin:0 2.5% 20px;padding:18px 2%}.dash-controls{grid-template-columns:1fr;gap:14px}}
+@media(max-width:600px){.dash-brand-left{gap:10px}.dash-zuri{font-size:21px}.dash-zuri span{font-size:12px}.dash-divider{height:55px}.dash-anniv{gap:8px}.dash-anniv>strong{font-size:56px}.dash-anniv b{font-size:17px}.dash-anniv span{font-size:15px}.dash-card{padding:14px 10px}.dash-control label{font-size:15px}.dash-control input,.dash-control select{height:48px;font-size:14px}.dashboard-table-wrap tbody td{padding:9px;font-size:13px}.dashboard-table-wrap thead th{padding:12px 9px;font-size:13px}.dash-status{font-size:11px;padding:7px}.dash-check{min-width:100px;padding:9px;font-size:12px}}
+
+
+/* Monitor kehadiran ringkas untuk layar Full HD */
+#monitorScreen{display:none;min-height:100vh;background:#f5f7fa;color:#1e293b}
+body.monitor-mode>header,body.monitor-mode>main,body.monitor-mode>#modalRoot{display:none!important}
+body.monitor-mode>#monitorScreen{display:block}
+.monitor-head{background:#fff;color:#12263d;padding:8px 16px;border-bottom:3px solid #bd2635;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.monitor-head h1{font-size:17px;line-height:1.2;margin:0;font-weight:800}
+.monitor-head p{font-size:11px;margin:2px 0 0;color:#738093}
+.monitor-head .event-kicker{display:none}
+.monitor-clock{display:flex;align-items:center;gap:12px;text-align:right;font-size:12px;font-weight:700}
+.monitor-clock #monitorDate{display:none}
+.monitor-clock button{font-size:11px;padding:6px 9px;margin:0!important}
+.monitor-content{padding:8px 14px 10px}
+.monitor-stats{display:flex;justify-content:flex-end;align-items:center;gap:10px;margin:0 2px 7px;font-size:12px}
+.monitor-stat{display:flex;align-items:center;gap:5px;background:transparent;border:0;border-radius:0;padding:0}
+.monitor-stat span{display:inline;color:#526176;font-weight:600;font-size:11px}
+.monitor-stat strong{font-size:18px;color:#12263d}
+.monitor-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;align-items:start}
+.monitor-list-panel{background:#fff;border:1px solid #e3e8ee;border-radius:8px;padding:8px;min-width:0}
+.monitor-panel-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:6px}
+.monitor-list-panel h2{margin:0;font-size:15px;white-space:nowrap}
+.monitor-list-panel .monitor-sub{color:#738093;font-size:11px;margin:0;white-space:nowrap}
+.monitor-search{margin-bottom:6px;padding:7px 9px;height:31px;font-size:12px;border-radius:6px}
+.monitor-names{max-height:calc(100vh - 145px);overflow:auto}
+.monitor-table{width:100%;border-collapse:collapse;table-layout:fixed;min-width:0}
+.monitor-table th{background:#f0f3f7;color:#66758a;font-size:10px;text-transform:none;letter-spacing:0;font-weight:700;padding:4px 7px;text-align:left;position:sticky;top:0}
+.monitor-table td{font-size:11px;padding:3px 7px;line-height:1.25;border-bottom:1px solid #edf0f4;overflow-wrap:anywhere}
+.monitor-table tbody tr:nth-child(even){background:#f7f9fb}
+.monitor-table td:first-child,.monitor-table th:first-child{width:34px;color:#718096}
+.monitor-table td:nth-child(2),.monitor-table th:nth-child(2){width:34%;font-weight:650}
+.monitor-table td:last-child,.monitor-table th:last-child{width:78px;text-align:center}
+.monitor-pill{display:inline-block;white-space:nowrap;border-radius:20px;padding:2px 6px;font-size:9px;font-weight:800}
+.monitor-pill.yes{background:#d9f3e1;color:#138143}.monitor-pill.no{background:#ffe0e2;color:#b51e2a}
+.monitor-footer{color:#738093;font-size:10px;text-align:right;margin-top:4px}
+@media(max-width:800px){.monitor-columns{grid-template-columns:1fr}.monitor-names{max-height:none}.monitor-head{padding:8px}.monitor-content{padding:8px}.monitor-table td{font-size:12px}}
+
+
+/* Halaman khusus GM - tampilan ringkas */
+#gmScreen{display:none;min-height:100vh;background:#f3f5f9;color:var(--ink)}
+body.gm-mode>header,body.gm-mode>main,body.gm-mode>#modalRoot,body.gm-mode>#monitorScreen{display:none!important}
+body.gm-mode>#gmScreen{display:block}
+.gm-head{background:var(--navy);color:#fff;padding:20px clamp(14px,3vw,36px);border-bottom:4px solid var(--red);display:flex;justify-content:space-between;align-items:center;gap:14px}
+.gm-head h1{font-size:clamp(20px,3vw,30px);margin:4px 0}.gm-head p{margin:0;color:#d2dbe6}
+.gm-wrap{max-width:1440px;margin:auto;padding:clamp(12px,2vw,26px)}
+.gm-kicker{font-size:11px;letter-spacing:2px;color:#e7c77f;font-weight:800}
+.gm-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:18px}
+.gm-metric{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px;box-shadow:var(--shadow)}
+.gm-metric span{font-size:12px;color:var(--muted);font-weight:650}.gm-metric strong{display:block;font-size:clamp(25px,3vw,36px);color:var(--navy);margin-top:6px}
+.gm-metric.present strong{color:var(--green)}.gm-metric.absent strong{color:var(--red)}
+.gm-panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:clamp(14px,2vw,22px);box-shadow:var(--shadow);margin-bottom:16px}
+.gm-panel h2{margin:0;color:var(--navy);font-size:18px}.gm-muted{font-size:12px;color:var(--muted);margin-top:4px}
+.gm-departments{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.gm-dept{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px;text-align:left;color:var(--ink);width:100%;box-shadow:none}
+.gm-dept:hover,.gm-dept.selected{border-color:var(--navy);background:#f8faff}
+.gm-dept-top{display:flex;justify-content:space-between;gap:8px;align-items:center}.gm-dept-name{font-weight:800;color:var(--navy);overflow-wrap:anywhere}
+.gm-dept-pct{font-size:20px;font-weight:850;color:var(--green);white-space:nowrap}
+.gm-progress{height:8px;background:#edf0f4;border-radius:99px;overflow:hidden;margin:12px 0 8px}.gm-progress span{height:100%;display:block;background:var(--green);border-radius:99px}
+.gm-dept-meta{font-size:12px;color:var(--muted)}
+.gm-detail-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.gm-detail-controls{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:9px;margin-bottom:12px}
+.gm-table-wrap{overflow:auto}.gm-table{width:100%;border-collapse:collapse;min-width:500px}.gm-table th{background:#f3f6fa;color:#65748a;font-size:11px;text-transform:uppercase;letter-spacing:.4px}.gm-table td,.gm-table th{padding:11px 12px;text-align:left;border-bottom:1px solid var(--line)}.gm-table td:last-child,.gm-table th:last-child{text-align:right}
+.gm-pill{display:inline-block;border-radius:30px;padding:5px 9px;font-size:11px;font-weight:800}.gm-pill.yes{background:var(--softgreen);color:var(--green)}.gm-pill.no{background:var(--softred);color:var(--red)}
+.gm-footer{padding:10px;text-align:center;color:var(--muted);font-size:11px}
+@media(max-width:850px){.gm-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.gm-departments{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.gm-head{align-items:flex-start}.gm-head .btn-light{font-size:11px;padding:8px}.gm-departments{grid-template-columns:1fr}.gm-detail-controls{grid-template-columns:1fr}.gm-metric{padding:13px}.gm-table td,.gm-table th{padding:9px;font-size:12px}}
+
+
+/* Compact GM dashboard */
+.gm-head{padding:10px 22px;border-bottom-width:3px;gap:10px}
+.gm-head h1{font-size:21px;margin:2px 0}
+.gm-head p{font-size:11px}
+.gm-kicker{font-size:9px;letter-spacing:1.3px}
+.gm-wrap{max-width:1500px;padding:12px 18px}
+.gm-metrics{gap:8px;margin-bottom:10px}
+.gm-metric{border-radius:9px;padding:10px 13px;box-shadow:none}
+.gm-metric span{font-size:10px}
+.gm-metric strong{font-size:25px;margin-top:2px}
+.gm-panel{border-radius:10px;padding:12px;margin-bottom:10px;box-shadow:none}
+.gm-panel h2{font-size:15px}
+.gm-muted{font-size:10px;margin-top:2px}
+.gm-departments{grid-template-columns:repeat(9,minmax(0,1fr));gap:6px;margin-top:8px}
+.gm-dept{border-radius:7px;padding:6px 7px;min-height:56px}
+.gm-dept-name{font-size:10px}
+.gm-dept-pct{font-size:12px}
+.gm-progress{height:4px;margin:5px 0 4px}
+.gm-dept-meta{font-size:8px}
+.gm-detail-head{margin-bottom:9px}
+.gm-detail-controls{gap:7px;margin-bottom:8px}
+.gm-table th{font-size:10px}
+.gm-table td,.gm-table th{padding:7px 9px}
+.gm-pill{padding:3px 7px;font-size:10px}
+.gm-footer{padding:6px;font-size:10px}
+@media(max-width:1100px){.gm-departments{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media(max-width:700px){.gm-head{padding:10px 12px}.gm-head h1{font-size:18px}.gm-wrap{padding:9px}.gm-departments{grid-template-columns:repeat(3,minmax(0,1fr))}.gm-metric strong{font-size:22px}}
+@media(max-width:420px){.gm-departments{grid-template-columns:repeat(2,minmax(0,1fr))}.gm-metrics{gap:6px}.gm-metric{padding:9px}.gm-metric span{font-size:9px}.gm-metric strong{font-size:20px}}
+
+/* GM dashboard: colorful, compact executive view */
+#gmScreen{background:linear-gradient(145deg,#f3f7ff 0%,#f8faff 48%,#fff5f7 100%)}
+.gm-head{padding:8px 16px;border-bottom:3px solid #e11d48;background:linear-gradient(105deg,#10243b 0%,#183e63 62%,#243b73 100%)}
+.gm-head h1{font-size:17px;line-height:1.2;margin:1px 0}
+.gm-head p{font-size:9px;margin:3px 0 0;color:#dbeafe}
+.gm-kicker{font-size:8px;letter-spacing:1px;color:#fbbf24}
+.gm-wrap{max-width:1500px;padding:8px 12px}
+.gm-metrics{gap:7px;margin-bottom:8px;grid-template-columns:repeat(4,minmax(0,1fr))}
+.gm-metric{padding:7px 10px;border:1px solid #e2e8f0;border-radius:9px;box-shadow:0 3px 10px rgba(30,64,175,.06);min-height:54px;position:relative;overflow:hidden}
+.gm-metric:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:#2563eb}
+.gm-metric:nth-child(2):before{background:#10b981}
+.gm-metric:nth-child(3):before{background:#f43f5e}
+.gm-metric:nth-child(4):before{background:#8b5cf6}
+.gm-metric span{font-size:8px;letter-spacing:.25px;color:#64748b}
+.gm-metric strong{font-size:19px;line-height:1.1;margin-top:2px}
+.gm-panel{padding:9px;border:1px solid #e3eaf5;border-radius:10px;background:rgba(255,255,255,.96);box-shadow:0 4px 14px rgba(30,64,175,.045);margin-bottom:8px}
+.gm-panel h2{font-size:13px;margin:0;color:#172b4d}
+.gm-muted{font-size:9px;color:#7b8ba5;margin-top:2px}
+.gm-departments{gap:5px;margin-top:7px}
+.gm-dept{min-height:49px;padding:5px 6px;border:1px solid #e0e7f3;border-radius:7px;background:linear-gradient(140deg,#fff,#f8fbff);box-shadow:0 1px 3px rgba(15,23,42,.025)}
+.gm-dept-name{font-size:9px;color:#243b5a}
+.gm-dept-pct{font-size:11px;color:#059669}
+.gm-progress{height:3px;margin:4px 0 3px;background:#e9eef6}
+.gm-dept-meta{font-size:7px;color:#718096}
+.gm-dept:nth-child(3n+1){border-top:2px solid #60a5fa}
+.gm-dept:nth-child(3n+2){border-top:2px solid #34d399}
+.gm-dept:nth-child(3n){border-top:2px solid #c4b5fd}
+.gm-detail-head{margin-bottom:6px}
+.gm-detail-controls{gap:6px;margin-bottom:6px}
+.gm-table th{font-size:9px;background:#f1f5fb;color:#64748b}
+.gm-table td,.gm-table th{padding:6px 8px}
+.gm-pill{padding:3px 6px;font-size:9px}
+@media(max-width:700px){
+ .gm-wrap{padding:7px}
+ .gm-head{padding:8px 10px}
+ .gm-head h1{font-size:15px}
+ .gm-metrics{gap:5px}
+ .gm-metric{min-height:46px;padding:6px 8px}
+ .gm-metric span{font-size:7px}
+ .gm-metric strong{font-size:16px}
+ .gm-panel{padding:8px}
+ .gm-dept{min-height:45px;padding:4px 5px}
+ .gm-dept-name{font-size:8px}
+ .gm-dept-pct{font-size:10px}
+ .gm-dept-meta{font-size:6.5px}
+}
+
+</style>
+</head>
+<body>
+<header class="top"><div class="top-inner">
+ <div class="brand"><div class="brand-mark">Z7</div><div><div class="kicker">THE ZURI DUMAI</div><h1>Daftar Hadir Anniversary 7th</h1><p>Staff Party · Fan7astic Anniversary</p></div></div>
+ <div class="top-right"><button class="btn-gold" id="openGM" style="margin-bottom:8px;margin-right:5px">▦ Dashboard GM</button><button class="btn-gold" id="openMonitor" style="margin-bottom:8px">▣ Buka Layar Monitor</button><strong id="clock">--:--:--</strong><small id="dateLabel">Sistem registrasi karyawan</small></div>
+</div></header>
+<main class="shell">
+ <nav class="tabs">
+  <button class="tab active" data-page="dashboard"><span class="ico">⌂</span>Dashboard Utama</button>
+  <button class="tab" data-page="attendance"><span class="ico">☑</span>Registrasi & Kehadiran</button>
+  <button class="tab" data-page="employees"><span class="ico">♙</span>Data Karyawan</button>
+  <button class="tab" data-page="departments"><span class="ico">▦</span>Department</button>
+  <button class="tab" data-page="export"><span class="ico">⇩</span>Export Spinwheel</button>
+  <button class="tab" data-page="backup"><span class="ico">⚙</span>Backup & Pengaturan</button>
+ </nav>
+
+
+ <section id="page-dashboard">
+  <div class="dash-card">
+   <div class="dash-controls">
+    <div class="dash-control">
+     <label for="dashSearch"><span class="search-symbol">⌕</span> Cari Nama Karyawan</label>
+     <input id="dashSearch" placeholder="Ketik nama karyawan..." autocomplete="off">
+    </div>
+    <div class="dash-control">
+     <label for="dashDeptFilter"><span class="building-symbol">▦</span> Filter Department</label>
+     <select id="dashDeptFilter"><option value="">Semua Department</option></select>
+    </div>
+   </div>
+   <div class="table-wrap dashboard-table-wrap" id="dashboardTable"></div>
+  </div>
+ </section>
+ <section id="page-attendance">
+  <div class="metrics">
+   <div class="metric"><div><div class="metric-label">TOTAL KARYAWAN</div><div class="metric-value" id="total">0</div></div><div class="metric-icon">♙</div></div>
+   <div class="metric green"><div><div class="metric-label">SUDAH CHECK-IN</div><div class="metric-value" id="present">0</div></div><div class="metric-icon">✓</div></div>
+   <div class="metric red"><div><div class="metric-label">BELUM HADIR</div><div class="metric-value" id="absent">0</div></div><div class="metric-icon">◷</div></div>
+   <div class="metric"><div><div class="metric-label">PERSENTASE HADIR</div><div class="metric-value" id="percent">0%</div></div><div class="metric-icon">↗</div></div>
+  </div>
+  <div class="grid-main">
+   <section class="panel">
+    <div class="panel-title"><div><h2>Registrasi karyawan</h2><div class="sub">Cari nama, pastikan department, lalu check-in.</div></div><span class="tag" id="resultCount">0 karyawan</span></div>
+    <div class="toolbar"><input id="search" placeholder="⌕  Ketik nama karyawan, contoh: Andi" autocomplete="off"><select id="deptFilter"><option value="">Semua department</option></select></div>
+    <div class="tabs" style="border:0;margin:0 0 12px"><button class="tab active" data-filter="absent">Belum hadir</button><button class="tab" data-filter="present">Sudah hadir</button><button class="tab" data-filter="all">Semua</button></div>
+    <div id="people" class="list"></div>
+   </section>
+   <aside class="panel"><div class="panel-title"><div><h2>Ringkasan department</h2><div class="sub">Pantau kehadiran per department.</div></div></div><div id="deptSummary" class="list"></div>
+    <div class="hintbox">Tips: jika salah check-in, klik <b>Batalkan</b>. Nama akan kembali ke daftar belum hadir dan aktivitas pembatalan tetap tercatat.</div>
+   </aside>
+  </div>
+ </section>
+ <section id="page-employees" class="hidden">
+  <div class="grid-main">
+   <section class="panel"><div class="panel-title"><div><h2>Tambah karyawan</h2><div class="sub">Simpan daftar nama sebelum acara dimulai.</div></div></div>
+    <form id="employeeForm" class="form-grid">
+     <div class="field"><label>Nama karyawan</label><input id="empName" placeholder="Contoh: Andi Pratama" required></div>
+     <div class="field"><label>Department</label><select id="empDept" required><option value="">Pilih department</option></select></div>
+     <div class="field full"><label>Atau tulis department baru</label><input id="empNewDept" placeholder="Opsional, contoh: Accounting"></div>
+     <div class="field full"><button class="btn-primary" type="submit">＋ Tambah karyawan</button></div>
+    </form>
+    <div class="section-note" style="margin-top:14px">Jika department baru diisi, department akan dibuat otomatis.</div>
+   </section>
+   <section class="panel"><div class="panel-title"><div><h2>Input banyak nama</h2><div class="sub">Satu karyawan per baris.</div></div></div>
+    <p class="section-note">Format: <b>Nama / Department</b></p><textarea id="bulkText" rows="7" placeholder="Anil / Acct&#10;Edo / FBS&#10;Lisa / FO"></textarea><div class="button-row"><button id="bulkAdd" class="btn-primary">Import daftar</button><button id="bulkClear" class="btn-light">Bersihkan</button></div>
+    <div class="hintbox">Nama dan department yang sama persis tidak akan dimasukkan dua kali.</div>
+   </section>
+  </div>
+  <section class="panel" style="margin-top:16px"><div class="panel-title"><div><h2>Daftar karyawan</h2><div class="sub">Edit atau hapus jika ada kesalahan input.</div></div><span class="tag" id="employeeCount">0 data</span></div><div class="toolbar"><input id="employeeSearch" placeholder="Cari nama atau department..."><select id="employeeDeptFilter"><option value="">Semua department</option></select></div><div id="employeeTable" class="table-wrap"></div></section>
+ </section>
+ <section id="page-departments" class="hidden">
+  <div class="grid-main">
+   <section class="panel"><div class="panel-title"><div><h2>Tambah department</h2><div class="sub">Kelola nama department yang digunakan saat registrasi.</div></div></div>
+    <form id="departmentForm" class="inline-form"><input id="departmentName" placeholder="Contoh: Front Office (FO)" required><button class="btn-primary" type="submit">＋ Tambah</button></form>
+    <div class="hintbox">Department yang sudah dipakai karyawan tidak dapat dihapus sebelum karyawannya dipindahkan atau dihapus. Ini mencegah data karyawan menjadi tidak valid.</div>
+   </section>
+   <section class="panel"><div class="panel-title"><div><h2>Info data</h2></div></div><div class="metric" style="box-shadow:none"><div><div class="metric-label">TOTAL DEPARTMENT</div><div class="metric-value" id="deptCount">0</div></div><div class="metric-icon">▦</div></div><p class="section-note" style="margin-top:12px">Hapus department yang salah input melalui tombol Hapus pada daftar di bawah.</p></section>
+  </div>
+  <section class="panel" style="margin-top:16px"><div class="panel-title"><div><h2>Daftar department</h2><div class="sub">Department yang tersedia pada aplikasi.</div></div></div><div id="departmentList" class="list"></div></section>
+ </section>
+ <section id="page-export" class="hidden">
+  <div class="export-layout">
+   <section class="panel"><div class="panel-title"><div><h2>Daftar hadir untuk Spinwheel</h2><div class="sub">Hanya karyawan yang sudah check-in yang akan diekspor.</div></div><span class="tag tag-green" id="spinCount">0 nama hadir</span></div>
+    <textarea id="exportPreview" rows="18" readonly placeholder="Daftar hadir akan muncul di sini..."></textarea>
+    <div class="button-row"><button class="btn-primary" id="exportTxt">⇩ Unduh TXT</button><button class="btn-light" id="copyList">▣ Salin daftar</button></div>
+    <div class="hintbox">Format satu baris per orang: <b>Nama / Department</b>. Cocok untuk dipindahkan ke aplikasi spinwheel.</div>
+   </section>
+   <section class="panel"><div class="panel-title"><div><h2>Kirim melalui WhatsApp</h2><div class="sub">Buka WhatsApp Web dengan teks daftar hadir siap dikirim.</div></div></div>
+    <div style="font-size:38px;margin:12px 0">☏</div><p class="section-note">WhatsApp Web akan terbuka di tab baru. Periksa daftar dan pilih kontak/grup tujuan sebelum mengirim.</p><button class="btn-green" id="sendWA" style="width:100%">Buka WhatsApp Web ↗</button>
+    <div class="hintbox">Aplikasi tidak mengirim pesan otomatis. HRO tetap memilih grup atau penerima dan menekan tombol kirim di WhatsApp.</div>
+   </section>
+  </div>
+ </section>
+ <section id="page-backup" class="hidden">
+  <div class="grid-main">
+   <section class="panel"><div class="panel-title"><div><h2>Backup data</h2><div class="sub">Simpan cadangan data karyawan dan kehadiran.</div></div></div><p class="section-note">Unduh file JSON sebelum acara dan setelah registrasi selesai. Simpan di folder yang aman.</p><button class="btn-primary" id="downloadBackup">⇩ Unduh backup JSON</button><div class="section-note" style="margin-top:12px">Untuk memulihkan data, pilih file backup JSON yang pernah diunduh.</div><input type="file" id="importFile" accept=".json,application/json"><button class="btn-light" id="importBtn" style="margin-top:10px">Pulihkan backup</button></section>
+   <section class="panel"><div class="panel-title"><div><h2>Aktivitas terakhir</h2><div class="sub">Check-in dan pembatalan terbaru.</div></div></div><div id="activity" class="list"></div></section>
+  </div>
+  <section class="panel" style="margin-top:16px"><h2 style="margin-top:0">Catatan penyimpanan</h2><p class="section-note">Versi ini menyimpan data di browser pada laptop yang sama (LocalStorage), belum menggunakan SQLite/server. Jangan hapus data situs/browser sebelum backup. Untuk database SQLite, aplikasi perlu dipindahkan ke versi backend lokal.</p><button class="btn-danger" id="clearAll">Hapus seluruh data aplikasi</button></section>
+ </section>
+ <div class="footer">THE ZURI DUMAI · DAFTAR HADIR ANNIVERSARY 7TH · VERSI PROTOTIPE LOKAL</div>
+</main>
+
+<div id="monitorScreen">
+  <header class="monitor-head">
+    <div><h1>Monitor Kehadiran</h1><p>Anniversary 7th · The Zuri Dumai</p></div>
+    <div class="monitor-stats">
+      <div class="monitor-stat"><span>Total</span><strong id="monTotal">0</strong></div>
+      <span style="color:#cbd5e1">|</span>
+      <div class="monitor-stat"><span>Hadir</span><strong id="monPresent" style="color:#16865a">0</strong></div>
+      <span style="color:#cbd5e1">|</span>
+      <div class="monitor-stat"><span>Belum</span><strong id="monAbsent" style="color:#bd2635">0</strong></div>
+      <div class="monitor-clock"><div id="monitorClock">--:--:--</div><div id="monitorDate"></div><button id="backToInput" class="btn-gold">← Input</button></div>
+    </div>
+  </header>
+  <div class="monitor-content">
+    <div class="monitor-columns">
+      <section class="monitor-list-panel"><div class="monitor-panel-head"><h2 style="color:#16865a">✓ Sudah Check-in</h2><div class="monitor-sub" id="monPresentLabel">0 hadir</div></div><input class="monitor-search" id="monPresentSearch" placeholder="Cari nama / department..."><div class="monitor-names" id="monPresentList"></div></section>
+      <section class="monitor-list-panel"><div class="monitor-panel-head"><h2 style="color:#bd2635">◷ Belum Check-in</h2><div class="monitor-sub" id="monAbsentLabel">0 belum hadir</div></div><input class="monitor-search" id="monAbsentSearch" placeholder="Cari nama / department..."><div class="monitor-names" id="monAbsentList"></div></section>
+    </div>
+    <div class="monitor-footer" id="monitorUpdated">Menunggu data...</div>
+  </div>
+</div>
+
+
+<div id="gmScreen">
+  <header class="gm-head">
+    <div><div class="gm-kicker">THE ZURI DUMAI · FAN7ASTIC ANNIVERSARY</div><h1>Dashboard Kehadiran GM</h1><p>Anniversary 7th · Ringkasan kehadiran per department</p></div>
+    <button id="gmBack" class="btn-light">← Halaman Utama</button>
+  </header>
+  <main class="gm-wrap">
+    <section class="gm-metrics">
+      <div class="gm-metric"><span>TOTAL KARYAWAN</span><strong id="gmTotal">0</strong></div>
+      <div class="gm-metric present"><span>SUDAH HADIR</span><strong id="gmPresent">0</strong></div>
+      <div class="gm-metric absent"><span>BELUM HADIR</span><strong id="gmAbsent">0</strong></div>
+      <div class="gm-metric"><span>PERSENTASE HADIR</span><strong id="gmPercent">0%</strong></div>
+    </section>
+    <section class="gm-panel">
+      <div class="panel-title"><div><h2>Kehadiran per Department</h2><div class="gm-muted">Pilih department untuk melihat nama yang sudah dan belum check-in.</div></div><span class="tag" id="gmDeptCount">0 department</span></div>
+      <div id="gmDepartments" class="gm-departments"></div>
+    </section>
+    <section class="gm-panel" id="gmDetailPanel">
+      <div class="gm-detail-head"><div><h2 id="gmDetailTitle">Detail Karyawan</h2><div class="gm-muted" id="gmDetailSub">Pilih salah satu department di atas.</div></div><span class="tag" id="gmDetailCount">0 karyawan</span></div>
+      <div class="gm-detail-controls"><input id="gmSearch" placeholder="Cari nama karyawan..." autocomplete="off"><select id="gmStatus"><option value="all">Semua status</option><option value="present">Sudah check-in</option><option value="absent">Belum check-in</option></select></div>
+      <div class="gm-table-wrap" id="gmDetailTable"><div class="empty">Klik department untuk melihat daftar karyawan.</div></div>
+    </section>
+    <div class="gm-footer" id="gmUpdated">Dashboard · The Zuri Dumai</div>
+  </main>
+</div>
+
+<div id="modalRoot"></div>
+<script>
+const KEY='zuri_anniv7_attendance_v2';
+let state={staff:[],departments:['Acct','FBS','FO','HK','Engineering','HRD','IT','Marketing','Security'],log:[]};
+let page='dashboard',filter='absent';
+const $=id=>document.getElementById(id);
+function idgen(){return (crypto.randomUUID?crypto.randomUUID():String(Date.now()+Math.random()));}
+function load(){try{let d=JSON.parse(localStorage.getItem(KEY)||'null');if(d&&Array.isArray(d.staff))state={...state,...d};else{let old=JSON.parse(localStorage.getItem('zuri_anniv7_attendance_v1')||'null');if(old&&Array.isArray(old.staff)){state={...state,...old};saveRaw();}}}catch(e){}}
+function saveRaw(){
+  localStorage.setItem(KEY,JSON.stringify(state));
+  try{if(window.attendanceChannel)window.attendanceChannel.postMessage({type:'attendance-update',state:state});}catch(e){}
+}
+function save(){saveRaw();render();}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function fmt(ts){return new Date(ts).toLocaleTimeString('id-ID',{timeZone:'Asia/Jakarta',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});}
+function initials(name){return String(name||'?').trim().split(/\s+/).slice(0,2).map(x=>x[0]||'').join('').toUpperCase();}
+function depts(){return [...new Set([...state.departments,...state.staff.map(s=>s.dept)].filter(Boolean))].sort((a,b)=>a.localeCompare(b,'id'));}
+function presentStaff(){return state.staff.filter(s=>s.checkin);}
+function listText(){return presentStaff().slice().sort((a,b)=>a.name.localeCompare(b.name,'id')).map(s=>`${s.name} / ${s.dept}`).join('\n');}
+function selectOptions(id,placeholder,values,selected=''){const el=$(id);if(!el)return;el.innerHTML=`<option value="">${esc(placeholder)}</option>`+values.map(d=>`<option value="${esc(d)}">${esc(d)}</option>`).join('');el.value=selected;}
+
+function renderDashboard(){
+ const old=$('dashDeptFilter').value;
+ selectOptions('dashDeptFilter','Semua Department',depts(),old);
+ const q=$('dashSearch').value.trim().toLowerCase(), dep=$('dashDeptFilter').value;
+ const rows=state.staff.filter(s=>(!q||s.name.toLowerCase().includes(q)||s.dept.toLowerCase().includes(q))&&(!dep||s.dept===dep)).sort((a,b)=>a.name.localeCompare(b.name,'id'));
+ $('dashboardTable').innerHTML=rows.length?`<table><thead><tr><th style="width:7%">No</th><th style="width:29%">Nama Karyawan</th><th style="width:24%">Department</th><th style="width:23%">Status</th><th style="width:17%;text-align:center">Aksi</th></tr></thead><tbody>${rows.map((s,i)=>`<tr><td>${i+1}</td><td>${esc(s.name)}</td><td>${esc(s.dept)}</td><td>${s.checkin?`<span class="dash-status present">✓ &nbsp; Sudah Check-in</span>`:`<span class="dash-status absent">◷ &nbsp; Belum Check-in</span>`}${s.checkin?`<div style="font-size:11px;color:#718096;margin-top:3px">${fmt(s.checkin)}</div>`:''}</td><td>${s.checkin?`<button class="dash-check" disabled>✓ &nbsp; Check-in</button>`:`<button class="dash-check ready" onclick="checkin('${s.id}')">▦ &nbsp; Check-in</button>`}</td></tr>`).join('')}</tbody></table>`:'<div class="empty"><b>Tidak ada karyawan</b>Ubah pencarian atau filter department.</div>';
+}
+function render(){
+ const total=state.staff.length,p=presentStaff().length; $('total').textContent=total;$('present').textContent=p;$('absent').textContent=total-p;$('percent').textContent=total?Math.round(p/total*100)+'%':'0%';
+ const ds=depts(),df=$('deptFilter').value,edf=$('employeeDeptFilter').value;
+ selectOptions('deptFilter','Semua department',ds,df);selectOptions('empDept','Pilih department',ds,$('empDept').value);
+ selectOptions('employeeDeptFilter','Semua department',ds,edf);
+ const q=$('search').value.trim().toLowerCase();
+ const rows=state.staff.filter(s=>(!q||s.name.toLowerCase().includes(q)||s.dept.toLowerCase().includes(q))&&(!$('deptFilter').value||s.dept===$('deptFilter').value)&&(filter==='all'||(filter==='present'?!!s.checkin:!s.checkin))).sort((a,b)=>a.name.localeCompare(b.name,'id'));
+ $('resultCount').textContent=rows.length+' karyawan';
+ $('people').innerHTML=rows.length?rows.map(s=>`<div class="person"><div class="avatar">${esc(initials(s.name))}</div><div class="person-main"><div class="person-name">${esc(s.name)}</div><div class="person-meta">${esc(s.dept)}${s.checkin?' · Check-in '+fmt(s.checkin):' · Belum check-in'}</div></div><div class="person-actions">${s.checkin?'<span class="tag tag-green">Hadir</span>':`<button class="btn-green btn-small" onclick="checkin('${s.id}')">✓ Check In</button>`}${s.checkin?`<button class="btn-danger btn-small" onclick="undoCheckin('${s.id}')">Batalkan</button>`:''}</div></div>`).join(''):'<div class="empty"><b>Tidak ada karyawan</b>Ubah pencarian atau filter, atau tambahkan data di menu Data Karyawan.</div>';
+ $('deptSummary').innerHTML=ds.length?ds.map(d=>{let all=state.staff.filter(s=>s.dept===d).length,yes=state.staff.filter(s=>s.dept===d&&s.checkin).length;return `<div class="dept-row"><div class="person-main"><div class="person-name">${esc(d)}</div><div class="person-meta">${yes} hadir dari ${all} karyawan</div><div class="bar"><span style="width:${all?yes/all*100:0}%"></span></div></div><span class="tag">${all?Math.round(yes/all*100):0}%</span></div>`}).join(''):'<div class="empty">Belum ada department.</div>';
+ renderDashboard();renderEmployees();renderDepartments();renderExport();renderActivity();
+ document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',b.dataset.filter===filter));
+}
+function renderEmployees(){
+ const q=$('employeeSearch').value.trim().toLowerCase(),d=$('employeeDeptFilter').value;
+ const rows=state.staff.filter(s=>(!q||s.name.toLowerCase().includes(q)||s.dept.toLowerCase().includes(q))&&(!d||s.dept===d)).sort((a,b)=>a.name.localeCompare(b.name,'id'));
+ $('employeeCount').textContent=state.staff.length+' data';
+ $('employeeTable').innerHTML=rows.length?`<table><thead><tr><th>Nama karyawan</th><th>Department</th><th>Status</th><th>Tindakan</th></tr></thead><tbody>${rows.map(s=>`<tr><td><b>${esc(s.name)}</b></td><td>${esc(s.dept)}</td><td>${s.checkin?'<span class="tag tag-green">Sudah hadir</span>':'<span class="tag">Belum hadir</span>'}</td><td><button class="btn-light btn-small" onclick="editStaff('${s.id}')">Edit</button> <button class="btn-danger btn-small" onclick="deleteStaff('${s.id}')">Hapus</button></td></tr>`).join('')}</tbody></table>`:'<div class="empty"><b>Belum ada karyawan</b>Tambahkan nama menggunakan formulir di atas.</div>';
+}
+function renderDepartments(){
+ const ds=depts();$('deptCount').textContent=ds.length;
+ $('departmentList').innerHTML=ds.length?ds.map(d=>{const n=state.staff.filter(s=>s.dept===d).length;return `<div class="person"><div class="avatar">▦</div><div class="person-main"><div class="person-name">${esc(d)}</div><div class="person-meta">${n} karyawan terdaftar</div></div><div class="person-actions"><button class="btn-danger btn-small" onclick="deleteDepartment('${encodeURIComponent(d)}')">Hapus department</button></div></div>`}).join(''):'<div class="empty">Belum ada department.</div>';
+}
+function renderExport(){$('exportPreview').value=listText();$('spinCount').textContent=presentStaff().length+' nama hadir';}
+function renderActivity(){const rows=state.log.slice(-10).reverse();$('activity').innerHTML=rows.length?rows.map(a=>`<div class="person"><div class="avatar">${a.action==='in'?'✓':'↶'}</div><div class="person-main"><div class="person-name">${esc(a.name)}</div><div class="person-meta">${esc(a.dept)} · ${a.action==='in'?'Check-in':'Pembatalan check-in'} · ${new Date(a.time).toLocaleString('id-ID',{timeZone:'Asia/Jakarta',hour12:false})}</div></div></div>`).join(''):'<div class="empty">Belum ada aktivitas.</div>';}
+function goPage(p){page=p;document.querySelectorAll('[data-page]').forEach(b=>b.classList.toggle('active',b.dataset.page===p));['dashboard','attendance','employees','departments','export','backup'].forEach(x=>$('page-'+x).classList.toggle('hidden',x!==p));render();}
+document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>goPage(b.dataset.page)));
+document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;render();}));
+$('search').addEventListener('input',render);$('deptFilter').addEventListener('change',render);$('dashSearch').addEventListener('input',renderDashboard);$('dashDeptFilter').addEventListener('change',renderDashboard);$('employeeSearch').addEventListener('input',render);$('employeeDeptFilter').addEventListener('change',render);
+function checkin(id){const s=state.staff.find(x=>x.id===id);if(!s||s.checkin)return;s.checkin=Date.now();state.log.push({name:s.name,dept:s.dept,action:'in',time:s.checkin});save();}
+function undoCheckin(id){const s=state.staff.find(x=>x.id===id);if(!s||!s.checkin)return;if(!confirm(`Batalkan check-in ${s.name}? Nama akan kembali ke daftar belum hadir.`))return;state.log.push({name:s.name,dept:s.dept,action:'undo',time:Date.now()});s.checkin=null;save();}
+$('employeeForm').addEventListener('submit',e=>{e.preventDefault();const name=$('empName').value.trim(),dept=($('empNewDept').value.trim()||$('empDept').value).trim();if(!name||!dept){alert('Isi nama dan department.');return;}if(state.staff.some(s=>s.name.toLowerCase()===name.toLowerCase()&&s.dept.toLowerCase()===dept.toLowerCase())){alert('Nama dan department ini sudah terdaftar.');return;}if(!state.departments.some(d=>d.toLowerCase()===dept.toLowerCase()))state.departments.push(dept);state.staff.push({id:idgen(),name,dept,checkin:null});e.target.reset();save();goPage('employees');});
+$('bulkAdd').onclick=()=>{const lines=$('bulkText').value.split(/\r?\n/).map(x=>x.trim()).filter(Boolean);let added=0,skipped=0;for(const line of lines){const parts=line.split('/');if(parts.length<2){skipped++;continue;}const name=parts[0].trim(),dept=parts.slice(1).join('/').trim();if(!name||!dept||state.staff.some(s=>s.name.toLowerCase()===name.toLowerCase()&&s.dept.toLowerCase()===dept.toLowerCase())){skipped++;continue;}if(!state.departments.some(d=>d.toLowerCase()===dept.toLowerCase()))state.departments.push(dept);state.staff.push({id:idgen(),name,dept,checkin:null});added++;}save();alert(`Berhasil menambahkan ${added} karyawan. Dilewati: ${skipped}.`);goPage('employees');};
+$('bulkClear').onclick=()=>$('bulkText').value='';
+$('departmentForm').addEventListener('submit',e=>{e.preventDefault();const d=$('departmentName').value.trim();if(!d)return;if(state.departments.some(x=>x.toLowerCase()===d.toLowerCase())){alert('Department sudah ada.');return;}state.departments.push(d);$('departmentName').value='';save();});
+function modal(title,body,buttons){$('modalRoot').innerHTML=`<div class="modal-back" id="modalBackdrop"><div class="modal"><h3>${title}</h3>${body}<div class="modal-actions">${buttons}</div></div></div>`;$('modalBackdrop').addEventListener('click',e=>{if(e.target.id==='modalBackdrop')$('modalRoot').innerHTML='';});}
+function editStaff(id){const s=state.staff.find(x=>x.id===id);if(!s)return;modal('Edit data karyawan',`<div class="field"><label>Nama karyawan</label><input id="editName" value="${esc(s.name)}"></div><div class="field" style="margin-top:12px"><label>Department</label><select id="editDept">${depts().map(d=>`<option ${d===s.dept?'selected':''}>${esc(d)}</option>`).join('')}<option value="__new">+ Department baru...</option></select></div><div class="field hidden" id="newDeptWrap" style="margin-top:12px"><label>Department baru</label><input id="editNewDept" placeholder="Nama department"></div>`, '<button class="btn-light" id="cancelModal">Batal</button><button class="btn-primary" id="saveEdit">Simpan perubahan</button>');$('cancelModal').onclick=()=> $('modalRoot').innerHTML='';$('editDept').onchange=()=> $('newDeptWrap').classList.toggle('hidden',$('editDept').value!=='__new');$('saveEdit').onclick=()=>{const name=$('editName').value.trim();let dept=$('editDept').value;if(dept==='__new')dept=$('editNewDept').value.trim();if(!name||!dept){alert('Nama dan department wajib diisi.');return;}if(state.staff.some(x=>x.id!==id&&x.name.toLowerCase()===name.toLowerCase()&&x.dept.toLowerCase()===dept.toLowerCase())){alert('Nama dan department tersebut sudah ada.');return;}if(!state.departments.some(d=>d.toLowerCase()===dept.toLowerCase()))state.departments.push(dept);s.name=name;s.dept=dept;save();$('modalRoot').innerHTML='';};}
+function deleteStaff(id){const s=state.staff.find(x=>x.id===id);if(!s)return;modal('Hapus karyawan?',`<p>Apakah kamu yakin ingin menghapus <b>${esc(s.name)}</b> dari department <b>${esc(s.dept)}</b>? Data kehadirannya juga akan dihapus dari daftar aktif.</p>`,'<button class="btn-light" id="cancelModal">Batal</button><button class="btn-danger" id="confirmDelete">Ya, hapus</button>');$('cancelModal').onclick=()=> $('modalRoot').innerHTML='';$('confirmDelete').onclick=()=>{state.log.push({name:s.name,dept:s.dept,action:'undo',time:Date.now()});state.staff=state.staff.filter(x=>x.id!==id);save();$('modalRoot').innerHTML='';};}
+function deleteDepartment(encoded){const d=decodeURIComponent(encoded);const n=state.staff.filter(s=>s.dept===d).length;if(n){alert(`Department "${d}" belum bisa dihapus karena masih dipakai ${n} karyawan. Hapus atau pindahkan karyawan tersebut terlebih dahulu.`);return;}modal('Hapus department?',`<p>Yakin ingin menghapus department <b>${esc(d)}</b>? Tindakan ini tidak dapat dibatalkan.</p>`,'<button class="btn-light" id="cancelModal">Batal</button><button class="btn-danger" id="confirmDeptDelete">Ya, hapus</button>');$('cancelModal').onclick=()=> $('modalRoot').innerHTML='';$('confirmDeptDelete').onclick=()=>{state.departments=state.departments.filter(x=>x!==d);save();$('modalRoot').innerHTML='';};}
+function download(name,content,type='text/plain;charset=utf-8'){const blob=new Blob([content],{type});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+$('exportTxt').onclick=()=>download('Daftar_Hadir_Anniversary_7th_The_Zuri_Dumai.txt',listText());
+$('copyList').onclick=async()=>{try{await navigator.clipboard.writeText(listText());alert('Daftar hadir berhasil disalin.');}catch(e){$('exportPreview').focus();$('exportPreview').select();alert('Tekan Ctrl+C untuk menyalin daftar.');}};
+$('sendWA').onclick=()=>{const text='DAFTAR HADIR\nAnniversary 7th The Zuri Dumai\n\n'+listText();window.open('https://web.whatsapp.com/send?text='+encodeURIComponent(text),'_blank');};
+$('downloadBackup').onclick=()=>download('Backup_Daftar_Hadir_Anniversary_7th.json',JSON.stringify(state,null,2),'application/json');
+$('importBtn').onclick=()=>{const f=$('importFile').files[0];if(!f){alert('Pilih file backup JSON terlebih dahulu.');return;}const reader=new FileReader();reader.onload=()=>{try{const d=JSON.parse(reader.result);if(!Array.isArray(d.staff)||!Array.isArray(d.departments))throw Error();if(!confirm('Pulihkan backup akan mengganti seluruh data saat ini. Lanjutkan?'))return;state={staff:d.staff,departments:d.departments,log:Array.isArray(d.log)?d.log:[]};save();alert('Backup berhasil dipulihkan.');}catch(e){alert('File backup tidak valid.');}};reader.readAsText(f);};
+$('clearAll').onclick=()=>{if(!confirm('PERINGATAN: Hapus seluruh data karyawan, department, dan kehadiran dari browser ini? Pastikan sudah membuat backup.'))return;if(!confirm('Konfirmasi terakhir: data yang belum di-backup akan hilang. Lanjutkan?'))return;state={staff:[],departments:[],log:[]};save();};
+function tick(){const n=new Date();$('clock').textContent=n.toLocaleTimeString('id-ID',{timeZone:'Asia/Jakarta',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});$('dateLabel').textContent=n.toLocaleDateString('id-ID',{timeZone:'Asia/Jakarta',weekday:'long',day:'numeric',month:'long',year:'numeric'});}
+
+// Sinkronisasi dua tab Chrome yang membuka file HTML yang sama.
+try { window.attendanceChannel = new BroadcastChannel('zuri_anniv7_attendance_channel'); } catch(e) { window.attendanceChannel = null; }
+function applyIncomingState(incoming){
+  if(!incoming || !Array.isArray(incoming.staff)) return;
+  state={...state,...incoming};
+  try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}
+  if(document.body.classList.contains('monitor-mode')) renderMonitor();
+  else render();
+}
+if(window.attendanceChannel) window.attendanceChannel.onmessage = e => {
+  if(e.data && e.data.type==='attendance-update') applyIncomingState(e.data.state);
+};
+window.addEventListener('storage', e => {
+  if(e.key===KEY && e.newValue){try{applyIncomingState(JSON.parse(e.newValue));}catch(err){}}
+});
+
+function monitorRenderList(items, target, query, present){
+  const q=(query||'').trim().toLowerCase();
+  const rows=items.filter(s=>!q||s.name.toLowerCase().includes(q)||s.dept.toLowerCase().includes(q))
+    .sort((a,b)=>a.name.localeCompare(b.name,'id'));
+  $(target).innerHTML=rows.length?`<table class="monitor-table"><thead><tr><th>No</th><th>Nama</th><th>Department</th><th>${present?'Waktu':'Status'}</th></tr></thead><tbody>${rows.map((s,i)=>`<tr><td>${i+1}</td><td>${esc(s.name)}</td><td>${esc(s.dept)}</td><td>${present?fmt(s.checkin):`<span class="monitor-pill no">BELUM</span>`}</td></tr>`).join('')}</tbody></table>`:'<div style="padding:12px;color:#738093;font-size:12px">Tidak ada nama yang cocok.</div>';
+  return rows.length;
+}
+function renderMonitor(){
+  const yes=state.staff.filter(s=>s.checkin), no=state.staff.filter(s=>!s.checkin);
+  $('monTotal').textContent=state.staff.length;
+  $('monPresent').textContent=yes.length;
+  $('monAbsent').textContent=no.length;
+  $('monPresentLabel').textContent=yes.length+' hadir';
+  $('monAbsentLabel').textContent=no.length+' belum hadir';
+  monitorRenderList(yes,'monPresentList',$('monPresentSearch').value,true);
+  monitorRenderList(no,'monAbsentList',$('monAbsentSearch').value,false);
+  $('monitorUpdated').textContent='Data diperbarui otomatis · '+new Date().toLocaleTimeString('id-ID',{timeZone:'Asia/Jakarta',hour12:false});
+}
+function updateMonitorClock(){
+  const now=new Date();
+  if($('monitorClock')) $('monitorClock').textContent=now.toLocaleTimeString('id-ID',{timeZone:'Asia/Jakarta',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});
+  if($('monitorDate')) $('monitorDate').textContent=now.toLocaleDateString('id-ID',{timeZone:'Asia/Jakarta',weekday:'long',day:'numeric',month:'long',year:'numeric'});
+}
+$('monPresentSearch').addEventListener('input',renderMonitor);
+$('monAbsentSearch').addEventListener('input',renderMonitor);
+$('openMonitor').addEventListener('click',()=>{
+  const url=new URL(window.location.href);url.searchParams.set('mode','monitor');
+  window.open(url.href,'ZuriAttendanceMonitor');
+});
+$('backToInput').addEventListener('click',()=>{
+  const url=new URL(window.location.href);url.searchParams.delete('mode');window.location.href=url.href;
+});
+
+// Dashboard GM mandiri, dapat dibuka dengan URL ?mode=gm
+let gmSelectedDept='';
+function renderGM(){
+  const staff=state.staff||[], yes=staff.filter(s=>s.checkin).length, total=staff.length;
+  $('gmTotal').textContent=total;$('gmPresent').textContent=yes;$('gmAbsent').textContent=total-yes;
+  $('gmPercent').textContent=(total?Math.round(yes/total*100):0)+'%';
+  const ds=depts();$('gmDeptCount').textContent=ds.length+' department';
+  if(!gmSelectedDept && ds.length) gmSelectedDept=ds[0];
+  if(gmSelectedDept && !ds.includes(gmSelectedDept))gmSelectedDept=ds[0]||'';
+  $('gmDepartments').innerHTML=ds.length?ds.map(d=>{
+    const all=staff.filter(s=>s.dept===d), present=all.filter(s=>s.checkin).length, pct=all.length?Math.round(present/all.length*100):0;
+    return `<button class="gm-dept ${gmSelectedDept===d?'selected':''}" data-gm-dept="${esc(d)}"><div class="gm-dept-top"><span class="gm-dept-name">${esc(d)}</span><span class="gm-dept-pct">${pct}%</span></div><div class="gm-progress"><span style="width:${pct}%"></span></div><div class="gm-dept-meta">${present} hadir · ${all.length-present} belum · total ${all.length}</div></button>`;
+  }).join(''):'<div class="empty">Belum ada data department/karyawan.</div>';
+  document.querySelectorAll('[data-gm-dept]').forEach(b=>b.addEventListener('click',()=>{gmSelectedDept=b.dataset.gmDept;renderGM();}));
+  const q=$('gmSearch').value.trim().toLowerCase(), status=$('gmStatus').value;
+  const rows=staff.filter(s=>(!gmSelectedDept||s.dept===gmSelectedDept)&&(!q||s.name.toLowerCase().includes(q)||s.dept.toLowerCase().includes(q))&&(status==='all'||(status==='present'?!!s.checkin:!s.checkin))).sort((a,b)=>a.name.localeCompare(b.name,'id'));
+  $('gmDetailTitle').textContent=gmSelectedDept||'Detail Karyawan';
+  const deptStaff=staff.filter(s=>s.dept===gmSelectedDept), deptYes=deptStaff.filter(s=>s.checkin).length;
+  $('gmDetailSub').textContent=gmSelectedDept?`${deptYes} dari ${deptStaff.length} karyawan hadir (${deptStaff.length?Math.round(deptYes/deptStaff.length*100):0}%).`:'Pilih salah satu department di atas.';
+  $('gmDetailCount').textContent=rows.length+' karyawan';
+  $('gmDetailTable').innerHTML=rows.length?`<table class="gm-table"><thead><tr><th>No</th><th>Nama Karyawan</th><th>Department</th><th>Status</th><th>Waktu Check-in</th></tr></thead><tbody>${rows.map((s,i)=>`<tr><td>${i+1}</td><td><b>${esc(s.name)}</b></td><td>${esc(s.dept)}</td><td><span class="gm-pill ${s.checkin?'yes':'no'}">${s.checkin?'Sudah hadir':'Belum hadir'}</span></td><td>${s.checkin?fmt(s.checkin):'—'}</td></tr>`).join('')}</tbody></table>`:'<div class="empty"><b>Tidak ada karyawan</b>Tidak ada nama yang cocok dengan filter ini.</div>';
+  $('gmUpdated').textContent='Terakhir diperbarui: '+new Date().toLocaleTimeString('id-ID',{timeZone:'Asia/Jakarta',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false})+' · Data tersimpan di browser ini';
+}
+$('gmSearch').addEventListener('input',renderGM);
+$('gmStatus').addEventListener('change',renderGM);
+$('openGM').addEventListener('click',()=>{const url=new URL(window.location.href);url.searchParams.set('mode','gm');window.open(url.href,'ZuriAttendanceGM');});
+$('gmBack').addEventListener('click',()=>{const url=new URL(window.location.href);url.searchParams.delete('mode');window.location.href=url.href;});
+
+if(new URLSearchParams(window.location.search).get('mode')==='gm'){
+  document.body.classList.add('gm-mode');document.title='Dashboard GM — The Zuri Dumai';load();renderGM();setInterval(()=>{renderGM();},5000);
+}
+if(new URLSearchParams(window.location.search).get('mode')==='monitor'){
+  document.body.classList.add('monitor-mode');
+  document.title='Monitor Kehadiran — The Zuri Dumai';
+  load();renderMonitor();updateMonitorClock();setInterval(()=>{updateMonitorClock();renderMonitor();},5000);
+}
+
+if(!['monitor','gm'].includes(new URLSearchParams(window.location.search).get('mode'))){load();render();tick();setInterval(tick,1000);}
+</script></body></html>
